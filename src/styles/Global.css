@@ -1,27 +1,13 @@
 :root {
-    --white: #FFFFFF;
-    --background-color: #FFFFFF;
-    --light-navy: #0a051b;
-    --lightest-navy: #0f1727;
-    --black: #000000;
-    --teal: #64CCC5;
-    --lighter-teal: #00ffea;
-    --sheer-teal: #64ccc58e;
-    --teal-sheer: #64ccc59a;
-    --dark-teal: #176B87;
-    --dark-teal-sheer: #176b87aa;
-    --mint: #DAFFFB;
-    --slate: #333333;
-    --light-slate: #565656;
-    --lightest-slate: #777777;
-
-    --card-color: #d3eae9;
-    --card-icon: #53a9a3;
-    --gif-background: #0e0e0e;
-
-    --card-height: 200px;
-    --card-width: 200px;
-
-    --surface-color: #fff;
-    --curve: 40;
+  --dark-navy: #020c1b;
+  --navy: #02010a;
+  --light-navy: #0e0725;
+  --lightest-navy: #233554;
+  --navy-shadow: rgba(2, 12, 27, 0.7);
+  --slate: #8892b0;
+  --light-slate: #a8b2d1;
+  --lightest-slate: #ccd6f6;
+  --white: #e6f1ff;
+  --green-bright: #caa1ff;
+  --green-tint: rgba(100, 255, 218, 0.1);
 }

@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "NTR";
+  font-weight: 200;
+  font-display: fallback;
+  src: url("/fonts/NTR-Regular.ttf") format("truetype");
+}
+
+#skills {
+  padding-left: 15%;
+  padding-right: 25%;
+  min-height: 60vh;
+  padding-top: 10%;
+  padding-bottom: 7%;
+}
+
+.skills-description ul {
+  padding-top: 20px;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 10px));
+  
+  @media only screen and (max-width: 788px) {
+    grid-template-columns: repeat(1, minmax(500px, 100px));
+  }
+}
+
+.skills-description li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 18px;
+  color: var(--slate);
+}
+
+.skills-description li::before {
+  content: "▹    ";
+  color: var(--green-bright);
+  position: absolute;
+  left: 0;
+}
+
+.skills-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.skills-description {
+  font-family: "NTR", sans-serif;
+  color: var(--slate);
+  max-width: 600px;
+  font-size: 22px;
+  text-align: justify;
+  margin: 0;
+}
+
+.skills-description a,
+.skills-description b {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  #skills {
+    height: unset;
+    padding-left: unset;
+    padding-right: unset;
+    padding-top: 30%;
+  }
+
+  .skills-description {
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .skills-description a,
+  .skills-description b {
+    font-size: 17px;
+  }
+
+  .skills-content {
+    display: unset;
+  }
+}

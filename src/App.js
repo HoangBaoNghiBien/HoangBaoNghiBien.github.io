@@ -1,29 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import SidebarNav from "./components/SidebarNav";
+import Intro from "./components/Intro";
+import Experience from "./components/Experience";
+import Education from "./components/Education";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Credits from "./components/Credits";
+import "./App.css";
 import "./styles/Global.css";
-
-import NavBar from './components/navbar/NavBar';
-import Home from './components/home/Home';
-import Research from './components/research/Research';
-import Team from './components/team/Team';
-import Publications from './components/publications/Publications';
-import News from './components/news/News';
-import Awards from './components/news/Awards';
-import Courses from './components/courses/Courses';
-import Contact from './components/contact/Contact';
+import "rsuite/dist/styles/rsuite-default.css";
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <Home />
-      <Research />
-      <Team />
-      <Publications />
-      {/* <News username="@BEI_Lab"/> */}
-      <Awards />
-      <Courses />
-      <Contact />
+      <div id="content">
+        <Intro></Intro>
+        <Education></Education>
+        <Skills></Skills>
+        <Experience></Experience>
+        <Projects></Projects>
+        <Credits></Credits>
+      </div>
+      <SidebarNav />
     </div>
   );
 }
