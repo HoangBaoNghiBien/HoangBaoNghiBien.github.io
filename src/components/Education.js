@@ -22,8 +22,9 @@ class Education extends React.Component {
     const one = (
       <p>
         I am currently a senior at
-        <a href="https://www.uic.edu/"> The University of Illinois at Chicago</a>, majoring in Computer Science. I am expected to graduate in December 2023.
-
+        <a href="https://www.uic.edu/"> The University of Illinois at Chicago</a>, majoring in Computer Science. I am expected to graduate in December 2023 with Bachelor of Science in Computer Science degree.
+        <br></br>
+        I will also continue my studies at UIC for a <a>Master of Science in Computer Science</a> and graduate in Deccember 2024.
       </p>
     );
     // const two = (
@@ -51,8 +52,12 @@ class Education extends React.Component {
       "Computer Algorithms I (CS 401)",
       "Database Systems (CS 480)",
       "Artificial Intelligence I (CS 411)",
+      "Introduction to Machine Learning (CS 412)",
       "Computer Vision I (CS 415)",
       "Introduction to Data Science (CS 418)",
+      "Natural Language Processing (CS 421)",
+      "User Interface Design and Programming (CS 422)",
+      "Visualization and Visual Analytics (CS 424)",
     ];
 
     const tech_items = tech_stack.map(stack => <li>{stack}</li>);
@@ -79,7 +84,7 @@ class Education extends React.Component {
               {/* {[two]} */}
               <br></br>
               <a
-                href="https://drive.google.com/file/d/1fCzFtU1FMNzWdW-DMySOQ58GjPpSoEV8/view?usp=sharing"
+                href="https://drive.google.com/file/d/1b13s73stY7B-IBBGtDHddsimhDUSzEdk/view?usp=sharing"
                 className="intro-contact"
               >
                 <Description></Description>
