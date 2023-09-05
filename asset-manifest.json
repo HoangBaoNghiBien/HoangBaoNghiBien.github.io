@@ -1,17 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.e0938c2b.css",
-    "main.js": "/static/js/main.0ba918a3.js",
-    "static/js/787.a8989e3a.chunk.js": "/static/js/787.a8989e3a.chunk.js",
-    "static/media/Chicago1.jpeg": "/static/media/Chicago1.b679063bc92e38606693.jpeg",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/static/css/main.577335d7.chunk.css",
+    "main.js": "/static/js/main.9e41f25b.chunk.js",
+    "main.js.map": "/static/js/main.9e41f25b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f7353c91.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f7353c91.js.map",
+    "static/css/2.ad5ce37f.chunk.css": "/static/css/2.ad5ce37f.chunk.css",
+    "static/js/2.c5299e57.chunk.js": "/static/js/2.c5299e57.chunk.js",
+    "static/js/2.c5299e57.chunk.js.map": "/static/js/2.c5299e57.chunk.js.map",
     "index.html": "/index.html",
-    "main.e0938c2b.css.map": "/static/css/main.e0938c2b.css.map",
-    "main.0ba918a3.js.map": "/static/js/main.0ba918a3.js.map",
-    "787.a8989e3a.chunk.js.map": "/static/js/787.a8989e3a.chunk.js.map"
+    "precache-manifest.e7d8dbfc26d0344bf091432df5aea017.js": "/precache-manifest.e7d8dbfc26d0344bf091432df5aea017.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.ad5ce37f.chunk.css.map": "/static/css/2.ad5ce37f.chunk.css.map",
+    "static/css/main.577335d7.chunk.css.map": "/static/css/main.577335d7.chunk.css.map",
+    "static/js/2.c5299e57.chunk.js.LICENSE.txt": "/static/js/2.c5299e57.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/css/main.e0938c2b.css",
-    "static/js/main.0ba918a3.js"
+    "static/js/runtime-main.f7353c91.js",
+    "static/css/2.ad5ce37f.chunk.css",
+    "static/js/2.c5299e57.chunk.js",
+    "static/css/main.577335d7.chunk.css",
+    "static/js/main.9e41f25b.chunk.js"
   ]
 }
