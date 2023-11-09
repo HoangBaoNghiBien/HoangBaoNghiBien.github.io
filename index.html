@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<title>6.831 Sudokui</title>
+<meta name="viewport" content="width=device-width,user-scalable=no">
+<link rel="stylesheet" href="layout.css">
+<script src="lib/jquery-3.1.1.js"></script>
+<script src="lib/seedrandom.js"></script>
+<script src="algorithm.js"></script>
+<script src="hintmaker.js"></script>
+<script src="interface.js"></script>
+<!-- Remove this script to disable logging -->
+<script src="logging.js"></script>
+</head>
+<body>
+<table style="width:100%;min-height:80%;"><tr><td align="center">
+<center><h1>6.831 Sudokui</h1>
+<p style="margin-top:0">Your task: solve puzzles #1-#5 or more.</p>
+</center>
+<center style="display:table-cell;vertical-align:middle;">
+<div class="puzzlename" id="grade">&nbsp;</div>
+<table class="timescore"><tr>
+<td style="text-align:center">
+<span class="progress">Time</span>
+<span class="finished">Finished in</span> <span class="timer">0</span></td>
+</table>
+<table><tr>
+<td style="text-align:center" id="leftlayout">
+</td>
+<td>
+<center id="centerlayout">
+   <div class="firstRow">
+      <div class="tooltip">
+         <input type="button" value="Clear All" id="clearbutton" title="Reset puzzle.">
+         <span class="tooltiptext"></span>
+      </div>
+      <div class="tooltip">
+         <input type="button" value="Check Result" id="checkbutton" title="Check for mistakes.">
+         <span class="tooltiptext"></span>
+      </div>
+   </div>
+   
+   <div class="secondRow">
+      <div class="tooltip">
+         <input type="button" value="&laquo; Prev board" id="prevbutton" title="Previous puzzle.">
+         <span class="tooltiptext"></span>
+      </div>
+      <div class="tooltip">
+         <input type="button" value="Next board &raquo;" id="nextbutton" title="Next puzzle.">
+         <span class="tooltiptext"></span>
+      </div>
+   </div>
+   
+<p id="bottomtext"></p>
+</center>
+</td>
+<td id="rightlayout">
+</td>
+</tr>
+</table>
+<div class="sudoku-popup" id="victory">You Win!</div>
+<div class="sudoku-popup" id="ok">ok so far</div>
+<div class="sudoku-popup" id="errors">mistake</div>
+<div class="sudoku-popup" id="intro">
+<p>In this experiment, you will solve mini Sudoku puzzles.
+<p>The rules of Sudoku are to fill in all the digits so that no duplicates
+appear in any row, column or bold-bordered square.
+<p>This version of the interface uses the mouse or keyboard.
+<p> For the mouse:
+<ul>
+<li>To write a number, click on a handwritten number on the side,
+then click on a square.</li>
+<li>Click Next to go to the next puzle.</li>
+</ul>
+
+<p>For the keyboard:
+<ul>
+<li>Using mouse hover or arrow keyboard to choose cell.</li>
+<li>Press a number key (1-4) to write a number.</li>
+<li>Press 'e' to clear a cell.</li>
+<li>Press 'c' to clear all.</li>
+<li>Press 'Enter' to check the answer.</li>
+<li>Press '&lt;' to go to previous board.</li>
+<li>Press '>' to go to next board.</li>
+</ul>
+ 
+<p>Practice on puzzle #1. Then starting with puzzle #2,
+solve as many puzzles as quickly and correctly as you can.</div>
+</td></tr>
+</table>
+</body>
+</html>
