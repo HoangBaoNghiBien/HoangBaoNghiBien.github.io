@@ -119,16 +119,21 @@ var GLOBAL_STATE_TO_LOG = function () {
   function getUserNumber(uid) {
     // Retrieve the mapping object from localStorage, or initialize it if it doesn't exist.
     var userNumbersMap = JSON.parse(localStorage.getItem('userNumbersMap')) || {};
-    var maxNumber = parseInt(localStorage.getItem('maxUserNumber'), 20) || 0;
+    var maxNumber = parseInt(localStorage.getItem('maxUserNumber'), 20);
+
+    // Initialize maxNumber if it doesn't exist.
+    if (isNaN(maxNumber)) {
+      maxNumber = 0;
+    }
 
     // If the uid has not been assigned a userNumber yet, do so.
     if (!userNumbersMap.hasOwnProperty(uid)) {
       userNumbersMap[uid] = maxNumber;
-      localStorage.setItem('userNumbersMap', JSON.stringify(userNumbersMap));
 
       // Increment the max number for the next new user and update localStorage.
       maxNumber++;
       localStorage.setItem('maxUserNumber', maxNumber.toString());
+      localStorage.setItem('userNumbersMap', JSON.stringify(userNumbersMap));
     }
 
     // Return the user number associated with the uid.
