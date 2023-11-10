@@ -38,6 +38,9 @@ var GLOBAL_STATE_TO_LOG = function () {
   // A persistent unique id for the user.
   var uid = getUniqueId();
 
+  // unique user number
+  var userNumber = getUserNumber(uid);
+
   // Hooks up all the event listeners.
   function hookEventsToLog() {
     // Set up low-level event capturing.  This intercepts all
@@ -146,8 +149,6 @@ var GLOBAL_STATE_TO_LOG = function () {
     var name = customName || event.type;
     // By default, monitor some global state on every event.
     var infoObj = GLOBAL_STATE_TO_LOG();
-
-    var userNumber = getUserNumber(uid); // Retrieve the user number.
 
     // And monitor a few interesting fields from the event, if present.
     for (var key in EVENT_PROPERTIES_TO_LOG) {
