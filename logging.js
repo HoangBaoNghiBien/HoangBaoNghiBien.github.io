@@ -116,13 +116,23 @@ var GLOBAL_STATE_TO_LOG = function () {
   }
 
   // Retrieve or assign a user number.
-  function getUserNumber() {
-    // Your logic to get a user number here.
-    // For example, you could randomly assign a number:
-    if (!('userNumber' in localStorage)) {
-      localStorage['userNumber'] = Math.floor(Math.random() * 10) + 1; // Assign a number between 1 and 10.
+  function getUserNumber(uid) {
+    // Retrieve the mapping object from localStorage, or initialize it if it doesn't exist.
+    var userNumbersMap = JSON.parse(localStorage.getItem('userNumbersMap')) || {};
+    var maxNumber = parseInt(localStorage.getItem('maxUserNumber'), 20) || 0;
+
+    // If the uid has not been assigned a userNumber yet, do so.
+    if (!userNumbersMap.hasOwnProperty(uid)) {
+      userNumbersMap[uid] = maxNumber;
+      localStorage.setItem('userNumbersMap', JSON.stringify(userNumbersMap));
+
+      // Increment the max number for the next new user and update localStorage.
+      maxNumber++;
+      localStorage.setItem('maxUserNumber', maxNumber.toString());
     }
-    return localStorage['userNumber'];
+
+    // Return the user number associated with the uid.
+    return userNumbersMap[uid];
   }
 
   // Log the given event.
