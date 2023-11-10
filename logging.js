@@ -120,9 +120,14 @@ var GLOBAL_STATE_TO_LOG = function () {
 
   // Retrieve or assign a user number.
   function getUserNumber(uid) {
+    console.log('Getting user number for UID:', uid); // Debug: Output UID being processed
+
     // Retrieve the mapping object from localStorage, or initialize it if it doesn't exist.
     var userNumbersMap = JSON.parse(localStorage.getItem('userNumbersMap')) || {};
-    var maxNumber = parseInt(localStorage.getItem('maxUserNumber'), 20);
+    var maxNumber = parseInt(localStorage.getItem('maxUserNumber'), 10);
+
+    console.log('Current userNumbersMap:', userNumbersMap); // Debug: Show the current map
+    console.log('Current maxUserNumber:', maxNumber); // Debug: Show the current max number
 
     // Initialize maxNumber if it doesn't exist.
     if (isNaN(maxNumber)) {
@@ -131,12 +136,15 @@ var GLOBAL_STATE_TO_LOG = function () {
 
     // If the uid has not been assigned a userNumber yet, do so.
     if (!userNumbersMap.hasOwnProperty(uid)) {
-      userNumbersMap[uid] = maxNumber;
+      userNumbersMap[uid] = ++maxNumber; // Increment before assignment to start from 1
 
-      // Increment the max number for the next new user and update localStorage.
-      maxNumber++;
+      // Update localStorage with the new max number and map.
       localStorage.setItem('maxUserNumber', maxNumber.toString());
       localStorage.setItem('userNumbersMap', JSON.stringify(userNumbersMap));
+
+      console.log('Assigned new userNumber:', maxNumber); // Debug: Output the assigned number
+    } else {
+      console.log('Existing userNumber found:', userNumbersMap[uid]); // Debug: Output existing number
     }
 
     // Return the user number associated with the uid.
