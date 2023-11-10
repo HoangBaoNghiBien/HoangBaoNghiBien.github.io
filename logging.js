@@ -137,10 +137,10 @@ var GLOBAL_STATE_TO_LOG = function () {
     var state = location.hash;
 
     if (ENABLE_CONSOLE_LOGGING) {
-      console.log(uid, userNumber, time, name, target, info, state, LOG_VERSION);
+      console.log(uid, time, name, target, info, state, LOG_VERSION);
     }
     if (ENABLE_NETWORK_LOGGING) {
-      sendNetworkLog(uid, userNumber, time, name, target, info, state, LOG_VERSION);
+      sendNetworkLog(uid, time, name, target, info, state, LOG_VERSION);
     }
   }
 
@@ -181,7 +181,6 @@ var GLOBAL_STATE_TO_LOG = function () {
 // docs.google.com/forms/d/1Ao......................................QE0/edit
 function sendNetworkLog(
   uid,
-  userNumber,
   time,
   name,
   target,
@@ -191,7 +190,6 @@ function sendNetworkLog(
   var formid = "e/1FAIpQLSeVg__pP-4KcLZp3vddtJO6gucncK7qxp1Q0kXlDsmkKxqXxg";
   var data = {
     "entry.1989974691": uid,
-    "entry.1295713906": userNumber,
     "entry.2033536801": time,
     "entry.2099692500": name,
     "entry.1049947669": target,
