@@ -142,7 +142,7 @@ var GLOBAL_STATE_TO_LOG = function () {
     // By default, monitor some global state on every event.
     var infoObj = GLOBAL_STATE_TO_LOG();
 
-    var userNumber = getUserNumber(); // Retrieve the user number.
+    var userNumber = getUserNumber(uid); // Retrieve the user number.
 
     // And monitor a few interesting fields from the event, if present.
     for (var key in EVENT_PROPERTIES_TO_LOG) {
