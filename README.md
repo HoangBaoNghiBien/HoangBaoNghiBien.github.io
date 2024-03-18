@@ -19,3 +19,13 @@
    ```sh
    npm run build
    ```
+
+## C. deploy
+
+   ```sh
+   export NODE_OPTIONS=--openssl-legacy-provider
+   ```
+
+   ```sh
+   npm run deploy
+   ```
