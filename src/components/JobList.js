@@ -82,21 +82,23 @@ const JobList = () => {
   const [value, setValue] = React.useState(0);
 
   const experienceItems = {
-    "UIC BEI Lab": {
-      jobTitle: "Web developer, Automation Engineer @",
-      duration: "JUN 2023 - PRESENT",
-      desc: [
-        "Created a website for BEI Lab using React.js",
-        "Developed an automated pipeline for running lab’s experiments on EnergyPlus using Python which reduced the manual work by 70%",
-        "Built an automated procedure to process experiments data to user which reduced the complexity for user significantly"
-      ]
-    },
     "University of Illinois Chicago": {
-      jobTitle: "Teaching Assistant @",
+      jobTitle: "Undergraduate/Graduate Teaching Assistant @",
       duration: "JAN 2022 - PRESENT",
       desc: [
-        "Assist course instructors in preparing classes and course materials (e.g. answering inquiries, maintaining course websites, copying)",
-        "Support over 200 students in practice/discussion sessions or office hours"
+        "Design and led weekly lab sections, including content creation, lab recording, and student support, while developing auto - grader scripts for efficient grading",
+        "Collaborated with faculty to enhance course materials and teaching strategies, contributing to departmental academic growth and analyzing student participation for course improvement",
+        "Offered tailored student assistance through Piazza, discussion sessions, and office hours, focusing on exam preparation and academic inquiries"
+      ]
+    },
+    "UIC BEI Lab": {
+      jobTitle: "Web developer, Automation Engineer @",
+      duration: "JUN 2023 - DEC 2023",
+      desc: [
+        "Developed a responsive website for UIC BEI Lab with HTML, CSS, JavaScript, and React.js",
+        "Developed an automated pipeline for running lab’s experiments on EnergyPlus using Python which reduced the manual work by 70% ",
+        "Implementedsystemsforstreamlineddataprocessing,deliveryandautomateddatamanagementwithGoogleCloudAPIs",
+        "Created a tool using Zillow APIs for generating housing information reports from specified zip codes or city names"
       ]
     },
     CBBEL: {
