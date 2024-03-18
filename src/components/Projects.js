@@ -258,6 +258,68 @@ class Projects extends React.Component {
   render() {
     const projects = {
       All: [],
+      React: [
+        {
+          title: "Traffic Crashes Analysis",
+          desc:
+            "Conducted comprehensive traffic crash data analysis using advanced visual techniques, including dynamic scatterplot animations to effectively communicate temporal patterns and occurrences, thereby proposing actionable insights for data-driven decision-making",
+          techStack: "React, Database, Vega-lite",
+          link: "https://github.com/thanhtaita/CrashVisualization",
+          open: "https://crashes-visualization.netlify.app/",
+          image: "/assets/Traffic-Crash.jpeg"
+        },
+      ],
+      MySQL: [
+        {
+          title: "Dormitory Management System",
+          desc:
+            "Manage information in the dormitory such as rooms, administrators, staff and students.",
+          techStack: "React, MySQL",
+          link: "https://github.com/lvu5/project480",
+          open: "",
+          image: "/assets/Dorm.png"
+        },
+      ],
+      Python: [
+        {
+          title: "Early Detection of Skin Cancer",
+          desc:
+            "Trained and validated a model using the HAM 10,000 dermatoscopy image dataset from Harvard Dataverse and achieved 91% accuracy by implementing custom CNN and MobileNetV2 strategies",
+          techStack: "Python, Database, CNN, MobileNetV2",
+          link: "https://github.com/HoangBaoNghiBien/skin-cancer?tab=readme-ov-file",
+          open: "",
+          image: "/assets/Dorm.png"
+        },
+      ],
+      JavaScript: [
+        {
+          title: "Trip Vote",
+          desc:
+            "A web application to facilitate vacation planning for groups (4-12 people), addressing diverse preferences and logistical challenges",
+          techStack: "JavaScript, HTML, CSS, Bootstrap",
+          link: "https://github.com/HoangBaoNghiBien/TripVote-web",
+          open: "https://trip-vote.netlify.app/",
+          image: "/assets/TripVote.png"
+        },
+        {
+          title: "Fruit Catch Game",
+          desc:
+            "A web game where fruit is dropped randomly. Use manifest.json and serviceworker.js. Can be downloaded to your device.",
+          techStack: "JavaScript",
+          link: "https://github.com/HoangBaoNghiBien/CS294_WebApp/tree/main/FruitCatchGame",
+          open: "",
+          image: "/assets/FruitCatch1.png"
+        },
+        {
+          title: "Simple Notes App",
+          desc:
+            "Simple note taking web app with utilities like note statistics, news view, quotes provided by available APIs. Can be downloaded to your device.",
+          techStack: "JavaScript",
+          link: "https://github.com/HoangBaoNghiBien/CS294_WebApp/tree/main/NotesApp",
+          open: "",
+          image: "/assets/NotesApp1.png"
+        },
+      ],
       'C++': [
         {
           title: "DNA Profiling",
@@ -323,48 +385,6 @@ class Projects extends React.Component {
           link: "https://github.com/lvu5/cfourgame",
           open: "",
           image: "/assets/ConnectFour1.png"
-        },
-      ],
-      React: [
-        {
-          title: "Dormitory Management System",
-          desc:
-            "Manage information in the dormitory such as rooms, administrators, staff and students.",
-          techStack: "React, MySQL",
-          link: "https://github.com/lvu5/project480",
-          open: "",
-          image: "/assets/Dorm.png"
-        },
-      ],
-      MySQL: [
-        {
-          title: "Dormitory Management System",
-          desc:
-            "Manage information in the dormitory such as rooms, administrators, staff and students.",
-          techStack: "React, MySQL",
-          link: "https://github.com/lvu5/project480",
-          open: "",
-          image: "/assets/Dorm.png"
-        },
-      ],
-      JavaScript: [
-        {
-          title: "Fruit Catch Game",
-          desc:
-            "A web game where fruit is dropped randomly. Use manifest.json and serviceworker.js. Can be downloaded to your device.",
-          techStack: "JavaScript",
-          link: "https://github.com/HoangBaoNghiBien/CS294_WebApp/tree/main/FruitCatchGame",
-          open: "",
-          image: "/assets/FruitCatch1.png"
-        },
-        {
-          title: "Simple Notes App",
-          desc:
-            "Simple note taking web app with utilities like note statistics, news view, quotes provided by available APIs. Can be downloaded to your device.",
-          techStack: "JavaScript",
-          link: "https://github.com/HoangBaoNghiBien/CS294_WebApp/tree/main/NotesApp",
-          open: "",
-          image: "/assets/NotesApp1.png"
         },
       ],
       Arduino: [
